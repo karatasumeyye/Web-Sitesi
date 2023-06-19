@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    background-color: #181D31;
+    /* background: url(Resimler/arka2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  .navbar-nav {
+    margin: auto;
+   
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+ .container{
+  position: relative;
+ }
+ 
+  #carouselExampleCaptions {
+    position: absolute;
+    z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
+   width: 400px;
+  margin-bottom: 0;
+  margin-top: 30%;
+
+  }
+
+
+ #carouselExampleCaptions2{
+    position: absolute;
+    left: 2%;
+    z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
+   width: 400px;
+   
+ 
+  }
+
+  .container2{
+    position: relative;
+   }
+
+   
+   
+   .container2 .carousel-control-next {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 400px;
+   }
+
+   #carouselExampleCaptions3{
+    position: absolute;
+    margin-right: 2%;
+    z-index: 9999; /* Slider'ın diğer içeriklerin üstünde kalmasını sağlar */
+    width: 375px;
+    margin-top: 5%;
+   
+  }
+  
+ .bolum1,.bolum2, .bolum3 {
+  display: inline-block;
+  width: 30%;
+  height: 800px;
+  margin-right: 2%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+  .bolum1, .bolum2, .bolum3 {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+.bolum1{
+  background-image: url(Resimler/tarih.jpg);
+  background-size: cover;
+  margin-left: 20px;
+  position: relative;
+  overflow-y: auto;
+}
+.bolum1 img{
+  width: 100%;
+}
+
+.bolum2{
+  background-image: url(Resimler/bolum1.jpeg);
+  background-size: cover;
+  overflow-y: auto;
+  position: relative;
+  
+}
+
+.bolum2 img{
+  width: 94%;
+}
+
+#baslik1{
+  text-align: center;
+  margin-top: 2%;
+  color: rgb(164, 4, 4);
+}
+
+#paragraf1{
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+ 
+
+.beyaz-bolum{
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  width: 80%;
+  height: 650px;
+  background-color: white;
+  overflow-y:auto;
+  border-radius: 5%;
+}
+
+#baslik2{
+  color: rgb(4, 120, 4);
+  text-align: center;
+  margin-top: 2%;
+}
+
+#altbaslik2 {
+  text-align: center;
+  margin-left: 2%;
+}
+
+#paragraf2{
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.bolum3{
+  background-image: url(Resimler/yemek.jpg);
+  background-size: cover;
+  overflow-y: auto;
+  position: relative;
+}
+.bolum3 img{
+
+  width: 100%;
+}
+#baslik3{
+  text-align: center;
+  margin-top: 2%;
+  color: rgb(133, 5, 122);
+}
+
+.bolum3 li{
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .bolum1,
+  .bolum2,
+  .bolum3 {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bolum1,
+  .bolum2,
+  .bolum3 {
+    width: 100%;
+    float: none;
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  #carouselExampleCaptions2 {
+    width: 100%;
+    left: 0;
+  }
+
+  #carouselExampleCaptions3 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .container2 .carousel-control-next {
+    position: static;
+    margin-top: 10px;
+    transform: none;
+    left: 0;
+  }
+}
